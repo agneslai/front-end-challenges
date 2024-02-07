@@ -1,0 +1,145 @@
+:root {
+  --yellow: #F4D04E;
+  --black: #111111;
+  --white: #FFFFFF;
+  --gray: #7F7F7F;
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-regular: 600;
+}
+
+@font-face {
+  font-family: "PrimaryFont";
+  src: url("./fonts/static/Figtree-Regular.ttf");
+  src: local('PrimaryFont'), url(./fonts/static/Figtree-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "PrimaryFont-ExtraBold";
+  src: url("./fonts/static/Figtree-ExtraBold.ttf");
+  src: local('PrimaryFont-ExtraBold'), url(./fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+}
+
+body {
+  font-family: 'PrimaryFont', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color:  var(--yellow);
+  color: var(--black);
+  font-size: var(--text-16);
+  line-height: 150%;
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+  width: 384px;
+  background-color: var(--white);
+  border-radius: 20px;
+  border: var(--black) solid 1px;
+  padding: 24px;
+  box-shadow: 8px 8px var(--black);
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+}
+
+.category span {
+  background-color: var(--yellow);
+  border-radius: 4px;
+  padding: 4px 12px;
+  font-size: var(--text-14);
+  font-weight: var(--text-bold); 
+}
+
+.publish-date {
+  font-size: var(--text-16);
+}
+
+.title {
+  font-family: 'PrimaryFont-ExtraBold';
+  font-size: var(--text-24);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: var(--yellow);
+}
+
+.description {
+  font-size: var(--text-16);
+  color: var(--gray);
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-pic {
+  border-radius: 9999px;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-family: 'PrimaryFont-ExtraBold';
+  font-size: var(--text-16);
+}
+
+.attribution {
+  font-size: var(--text-12);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media (max-width:480px)  { 
+  .card {
+    width: 327px;
+  }
+
+  .category span, .publish-date {
+    font-size: var(--text-12);
+  }
+
+  .user-name, .description{
+    font-size: var(--text-14);
+  }
+
+  .title {
+    font-family: 'PrimaryFont-ExtraBold';
+    font: var(--text-20);
+  }
+}
