@@ -12,6 +12,13 @@
   --text-bold: 800;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: "PrimaryFont";
   src: url("./fonts/static/Figtree-Regular.ttf");
@@ -28,7 +35,6 @@ body {
   line-height: 150%;
   padding: 0px;
   margin: 0;
-  box-sizing: border-box;
 }
 
 p, h1 {
