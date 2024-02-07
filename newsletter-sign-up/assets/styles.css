@@ -1,0 +1,145 @@
+:root {
+  --navy: #242742;
+  --pale-navy: #36384D;
+  --red: #FF6155;
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-regular: 600;
+  --text-bold: 800;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+  src: local('Roboto'), url(./fonts/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./fonts/Roboto-Bold.ttf");
+  src: local('Roboto-Bold'), url(./fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+body {
+  background-color: var(--pale-navy);
+  color: var(--navy);
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--text-16);
+  line-height: 150%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;;
+}
+
+.card {
+  border-radius: 36px;
+  padding: 24px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  padding-left: 16px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+.title {
+  font-family: 'Roboto-bold';
+  font-size: 56px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+
+.list-item {
+  display: flex;
+  gap: 0 16px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input label {
+  font-family: 'Roboto-bold';
+  font-size: var(--text-12);
+}
+
+.form-input input {
+  font-size: var(--text-16);
+  color: var(--navy);
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  padding: 24px;
+}
+
+.sign-up-form button {
+  font-family: 'Roboto-bold';
+  font-size: var(--text-16);
+  background-color: var(--navy);
+  color: #E7E7E7;
+  padding: 24px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.sign-up-form button:hover {
+  background: linear-gradient(#FF6A3A, #FF527B);
+}
+
+.attribution {
+  font-size: var(--text-12);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #FFFFFF;
+}
+
+.attribution a {
+  color: var(--red);
+}
