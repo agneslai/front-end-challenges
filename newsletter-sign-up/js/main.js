@@ -1,19 +1,22 @@
+const signUpCard = document.getElementById('sign-up-card');
+const successCard = document.getElementById('success-card');
 const form = document.getElementById('sign-up-form');
 const emailInput = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
+const confirmText = document.getElementById('confirm-text');
 
 form.addEventListener('submit', function (event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault();
 
   if (validateEmail(emailInput.value)) {
     emailInput.classList.remove('input-error');
     errorMessage.style.display = 'none';
-    // TODO: Send the form data to the server or perform any other action
-    console.log('Email is valid: ' + emailInput.value);
+    signUpCard.style.display = 'none';
+    confirmText.innerHTML = `A confirmation email has been sent to <span class="bold">${emailInput.value}</span>. Please open it and click the button inside to confirm your subscription.`
+    successCard.style.display = 'block';
   } else {
     emailInput.classList.add('input-error');
     errorMessage.style.display = 'block';
-    console.log('Invalid email: ' + emailInput.value);
   }
 });
 
