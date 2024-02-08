@@ -16,9 +16,7 @@
       <div class="content">
         <div class="text">
           <h1 class="title">Stay updated!</h1>
-
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
           <div class="list">
             <div class="list-item">
               <img src="./assets/images/icon-list.svg" alt="list icon">
@@ -33,12 +31,14 @@
               <p>And much more!</p>
             </div>
           </div>
-
         </div>
 
-        <form action="" method="POST" class="sign-up-form">
+        <form id="sign-up-form" name="sign-up-form" method="POST" class="sign-up-form">
           <div class="form-input">
-            <label for="email">Email address</label>
+            <div class="label-wrapper">
+              <label for="email">Email address</label>
+              <span id="error-message" class="error-message">Valid email required</span>
+            </div>
             <input type="text" id="email" name="email" placeholder="email@company.com" required>
           </div>
           <button type="submit">Subscribe to monthly newsletter</button>
@@ -53,6 +53,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Agnes</a>.
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
