@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" id="mobile-illustration" class="mobile-illustration" alt="Sign Up Illustration" />
+
+    <div id="sign-up-card" class="sign-up-card">
+      <div class="content">
+        <div class="text">
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="list">
+            <div class="list-item">
+              <img src="./assets/images/icon-list.svg" alt="list icon">
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="list-item">
+              <img src="./assets/images/icon-list.svg" alt="list icon">
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="list-item">
+              <img src="./assets/images/icon-list.svg" alt="list icon">
+              <p>And much more!</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="sign-up-form" name="sign-up-form" method="POST" class="sign-up-form">
+          <div class="form-input">
+            <div class="label-wrapper">
+              <label for="email">Email address</label>
+              <span id="error-message" class="error-message">Valid email required</span>
+            </div>
+            <input type="text" id="email" name="email" placeholder="email@company.com" required>
+          </div>
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+
+      </div>
+      <img src="./assets/images/illustration-sign-up-desktop.svg" id="desktop-illustration" class="desktop-illustration" alt="Sign Up Illustration">
+    </div>
+
+    <div id="success-card" class="success-card">
+      <div class="content">
+        <div>
+          <img src="./assets/images/icon-success.svg" alt="success icon" class="success-icon" />
+          <h1 class="title">Thanks for subscribing!</h1>
+          <p id="confirm-text"></p>
+        </div>
+        <button>Dismiss message</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
