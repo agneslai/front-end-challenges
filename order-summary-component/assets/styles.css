@@ -1,0 +1,182 @@
+:root {
+  --blue: #382AE1;
+  --purple: #766CF1;
+  --dark-blue: #1F2E55;
+  --blue-grey: #717FA6;
+  --light-grey: #F7F9FF;
+  --bg: #E0E8FF;
+  --text-14: 14px;
+  --text-16: 16px;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PrimaryFont', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color:  var(--yellow);
+  color: var(--blue-grey);
+  font-size: var(--text-16);
+  line-height: 150%;
+  padding: 0px;
+  margin: 0;
+}
+
+p, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-desktop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bg-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  padding: 0 24px;
+}
+
+.card {
+  width: 450px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  box-shadow: 0 4px 4px #00000040;
+  z-index: 1;
+}
+
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 48px;
+  gap: 16px 0;
+}
+
+.content h1 {
+  font-size: 28px;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.plan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-grey);
+  border-radius: 11px;
+  padding: 25px 24px;
+  gap: 0 6px;
+}
+
+.plan-wrapper {
+  display: flex;
+  gap: 0 20px
+}
+
+.plan-title {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.change-btn {
+  background-color: transparent;
+  color: var(--blue);
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.change-btn:hover {
+  color: var(--purple);
+}
+
+.proceed-btn {
+  width: 100%;
+  height: 50px;
+  background-color: var(--blue);
+  color: #FFFFFF;
+  border-radius: 11px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 20px 20px #382AE130;
+}
+
+.proceed-btn:hover {
+  background-color: var(--purple);
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: var(--blue-grey);
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer
+}
+
+.cancel-btn:hover {
+  color: var(--dark-blue);
+}
+
+@media all and (max-width: 700px) {
+  body {
+    font-size: 15px;
+  }
+
+  .bg-desktop {
+    display: none;
+  }
+  .bg-mobile {
+    display: block;
+  }
+
+  .content {
+    padding: 38px 24px;
+    gap: 24px 0;
+  }
+
+  .content h1 {
+    font-size: 22px;
+  }
+
+  .plan-title {
+    font-size: 14px;
+  }
+
+  .change-btn {
+    font-size: 13px;
+  }
+}
