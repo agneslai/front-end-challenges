@@ -41,7 +41,7 @@ body {
 
 p, h1 {
   padding: 0;
-  margin: 0 !important;
+  margin: 0;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 0 24px;
   margin: 0;
 }
 
@@ -57,6 +57,12 @@ main {
   width: 100%;
   position: absolute;
   top: 0;
+}
+.mobile-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
 }
 
 .card {
@@ -77,7 +83,6 @@ main {
   color: var(--dark-purple);
   font-family: "PrimaryFont-Bold";
   font-size: 56px;
-  margin-bottom: 32px;
 }
 
 .star-icon {
@@ -104,6 +109,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0 24px;
 }
 
 .title {
@@ -125,4 +131,17 @@ main {
 
 .expand-icon {
   cursor: pointer;
+}
+
+@media all and (max-width: 700px) {
+  .desktop-bg {
+    display: none;
+  }
+  .mobile-bg {
+    display: block;
+  }
+
+  .header-wrapper h1 {
+    font-size: 32px;
+  }
 }
