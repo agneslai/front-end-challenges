@@ -1,0 +1,147 @@
+:root {
+  --light-pink: #F8EEFF;
+  --pink: #AD28EB;
+  --pale-purple: #8B6990;
+  --dark-purple: #301534;
+  --white: #FFFFFF;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "PrimaryFont";
+  src: url("./fonts/static/WorkSans-Regular.ttf");
+  src: local('PrimaryFont'), url(./fonts/static/WorkSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: "PrimaryFont-Bold";
+  src: url("./fonts/static/WorkSans-Bold.ttf");
+  src: local('PrimaryFont-Bold'), url(./fonts/static/WorkSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: "PrimaryFont-SemiBold";
+  src: url("./fonts/static/WorkSans-SemiBold.ttf");
+  src: local('PrimaryFont-SemiBold'), url(./fonts/static/WorkSans-Bold.ttf) format('truetype');
+}
+
+body {
+  font-family: "PrimaryFont", sans-serif;
+  font-size: 16px;
+  background-color: var(--light-pink);
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0;
+}
+
+p, h1 {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  margin: 0;
+}
+
+.desktop-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.mobile-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 16px;
+  width: 600px;
+  padding: 40px;
+  z-index: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 0 24px;
+  margin-bottom: 32px;
+}
+
+.header-wrapper h1 {
+  color: var(--dark-purple);
+  font-family: "PrimaryFont-Bold";
+  font-size: 56px;
+}
+
+.star-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+.question-and-answer {
+  padding-bottom: 24px;
+  border-bottom: solid 1px var(--light-pink);
+}
+
+.question-and-answer:last-child {
+  border-bottom: none;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 24px;
+}
+
+.title {
+  font-family: "PrimaryFont-SemiBold";
+  font-size: 18px;
+  color: var(--dark-purple);
+  cursor: pointer;
+}
+
+.title:hover {
+  color: var(--pink);
+}
+
+.answer {
+  color: var(--pale-purple);
+  line-height: 150%;
+  margin-top: 24px;
+}
+
+.expand-icon {
+  cursor: pointer;
+}
+
+@media all and (max-width: 700px) {
+  .desktop-bg {
+    display: none;
+  }
+  .mobile-bg {
+    display: block;
+  }
+
+  .header-wrapper h1 {
+    font-size: 32px;
+  }
+}
