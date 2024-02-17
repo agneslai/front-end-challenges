@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
 - Solution URL: [Github](https://github.com/agneslai/front-end-challenges)
-- Live Site URL: [Live Site](https://agneslai.github.io/front-end-challenges/blog-preview-card-main/)
+- Live Site URL: [Live Site](https://agneslai.github.io/front-end-challenges/faq-accordion)
 
 ## My Process
 ### Built with

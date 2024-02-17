@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/agneslai/front-end-challenges)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://agneslai.github.io/front-end-challenges/newsletter-sign-up)
 
 ## My Process
 ### Built with
