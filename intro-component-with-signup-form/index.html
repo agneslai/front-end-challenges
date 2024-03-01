@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="signup-form__intro">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="signup-form__wrapper">
+          <div class="signup-form__banner">
+            <span>Try it free 7 days </span>then $20/mo. thereafter
+          </div>
+          <form class="signup-form__form">
+            <div class="signup-form__inputGroup">
+              <div class="signup-form__inputField">
+                <input
+                  name="first name"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </div>
+              <div class="signup-form__errorMsg">
+                First Name cannot be empty
+              </div>
+            </div>
+
+            <div class="signup-form__inputGroup">
+              <div class="signup-form__inputField">
+                <input
+                  name="last name"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </div>
+              <div class="signup-form__errorMsg">Last Name cannot be empty</div>
+            </div>
+
+            <div class="signup-form__inputGroup">
+              <div class="signup-form__inputField">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                  autocomplete="true"
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </div>
+              <div class="signup-form__errorMsg">Last Name cannot be empty</div>
+            </div>
+
+            <div class="signup-form__inputGroup">
+              <div class="signup-form__inputField">
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <img src="./images/icon-error.svg" alt="error icon" />
+              </div>
+              <div class="signup-form__errorMsg">Last Name cannot be empty</div>
+            </div>
+
+            <button type="submit">Claim your free trial</button>
+            <div class="signup-form__form--terms">
+              By clicking the button, you are agreeing to our
+              <a href="">Terms and Services</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
