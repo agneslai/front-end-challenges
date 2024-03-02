@@ -36,15 +36,10 @@
           <div class="signup-form__banner">
             <span>Try it free 7 days </span>then $20/mo. thereafter
           </div>
-          <form class="signup-form__form">
+          <form id="signupForm" class="signup-form__form" novalidate>
             <div class="signup-form__inputGroup">
               <div class="signup-form__inputField">
-                <input
-                  name="first name"
-                  type="text"
-                  placeholder="First Name"
-                  required
-                />
+                <input id="firstName" name="First Name" type="text" placeholder="First Name" />
                 <img src="./images/icon-error.svg" alt="error icon" />
               </div>
               <div class="signup-form__errorMsg">
@@ -54,12 +49,7 @@
 
             <div class="signup-form__inputGroup">
               <div class="signup-form__inputField">
-                <input
-                  name="last name"
-                  type="text"
-                  placeholder="Last Name"
-                  required
-                />
+                <input id="lastName" name="Last Name" type="text" placeholder="Last Name" />
                 <img src="./images/icon-error.svg" alt="error icon" />
               </div>
               <div class="signup-form__errorMsg">Last Name cannot be empty</div>
@@ -68,31 +58,29 @@
             <div class="signup-form__inputGroup">
               <div class="signup-form__inputField">
                 <input
-                  name="email"
+                  id="email"
+                  name="Email"
                   type="email"
                   placeholder="Email Address"
-                  required
                   autocomplete="true"
                 />
                 <img src="./images/icon-error.svg" alt="error icon" />
               </div>
-              <div class="signup-form__errorMsg">Last Name cannot be empty</div>
+              <div class="signup-form__errorMsg">Email cannot be empty</div>
             </div>
 
             <div class="signup-form__inputGroup">
               <div class="signup-form__inputField">
-                <input
-                  name="password"
-                  type="password"
-                  placeholder="Password"
-                  required
-                />
+                <input id="password" name="Password" type="password" placeholder="Password" autocomplete="off" />
                 <img src="./images/icon-error.svg" alt="error icon" />
               </div>
-              <div class="signup-form__errorMsg">Last Name cannot be empty</div>
+              <div class="signup-form__errorMsg">Password cannot be empty</div>
             </div>
 
-            <button type="submit">Claim your free trial</button>
+            <button type="submit">
+              Claim your free trial
+            </button>
+
             <div class="signup-form__form--terms">
               By clicking the button, you are agreeing to our
               <a href="">Terms and Services</a>
@@ -102,4 +90,5 @@
       </div>
     </main>
   </body>
+  <script src="./assets/index.js"></script>
 </html>
